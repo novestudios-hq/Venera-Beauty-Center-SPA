@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#faf9f7">
+  <meta name="description" content="اكتشفوا قائمة العلاجات الحصرية والعافية في مركز فينيرا للتجميل والسبا في شرم الشيخ. اطلبوا حجزكم عبر ماسنجر.">
+  <title>مركز فينيرا للتجميل والسبا — قائمة العلاجات</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600&family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #faf9f7;
+      --surface: #ffffff;
+      --ink: #1a1a1a;
+      --muted: #77716d;
+      --line: #eae5e1;
+      --red: #c8102e;
+      --red-dark: #a90d27;
+      --serif: "Noto Naskh Arabic", "Times New Roman", serif;
+      --sans: "Tajawal", "Helvetica Neue", Arial, sans-serif;
+      --page-width: 560px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { min-width: 320px; scroll-behavior: smooth; background: var(--paper); }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(200, 16, 46, .035), transparent 38rem),
+        var(--paper);
+      font-family: var(--sans);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .page-shell {
+      width: min(100%, var(--page-width));
+      min-height: 100svh;
+      margin: 0 auto;
+      padding: 0 23px calc(34px + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 0 29px;
+    }
+    .brand-mark {
+      width: 76px;
+      height: 76px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 24px;
+      border: 1px solid rgba(200, 16, 46, .38);
+      border-radius: 50%;
+      color: var(--red);
+      background: rgba(255, 255, 255, .76);
+      box-shadow: 0 0 0 5px rgba(200, 16, 46, .035), 0 8px 24px rgba(45, 29, 25, .035);
+    }
+    .brand-mark svg { width: 38px; height: 38px; }
+    .eyebrow {
+      margin: 0 0 11px;
+      color: var(--red);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .04em;
+      line-height: 1.4;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 440px;
+      margin: 0 auto;
+      font-family: var(--serif);
+      font-size: clamp(30px, 8vw, 39px);
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 1.12;
+    }
+    .subtitle {
+      margin: 10px 0 0;
+      color: #5f5956;
+      font-family: var(--serif);
+      font-size: 17px;
+      font-style: normal;
+      letter-spacing: 0;
+    }
+    .location {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      max-width: 100%;
+      margin: 19px auto 0;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.55;
+      letter-spacing: 0;
+    }
+    .location svg { flex: 0 0 auto; color: var(--red); }
+    .hero-rule {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 29px auto 0;
+      color: #b5aaa4;
+    }
+    .hero-rule::before, .hero-rule::after {
+      width: 42px;
+      height: 1px;
+      background: var(--line);
+      content: "";
+    }
+    .hero-rule svg { width: 13px; height: 13px; }
+
+    .menu-section { padding: 0 0 13px; }
+    .section-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin: 1px 2px 14px;
+    }
+    .section-heading h2 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 23px;
+      font-weight: 400;
+      letter-spacing: 0;
+    }
+    .section-heading span {
+      color: #938b86;
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .service-list { display: grid; gap: 10px; }
+    .service-card {
+      padding: 16px 16px 15px;
+      border: 1px solid rgba(224, 218, 213, .82);
+      border-radius: 4px;
+      background: rgba(255, 255, 255, .84);
+      box-shadow: 0 4px 18px rgba(54, 41, 35, .025);
+    }
+    .service-topline {
+      display: flex;
+      align-items: baseline;
+      gap: 9px;
+    }
+    .service-name {
+      flex: 0 1 auto;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 1.28;
+    }
+    .leader {
+      flex: 1 1 16px;
+      min-width: 12px;
+      transform: translateY(-4px);
+      border-bottom: 1px dotted #c9bfba;
+    }
+    .price {
+      flex: 0 0 auto;
+      color: var(--red);
+      font-size: 13px;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+    .service-description {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+      letter-spacing: .005em;
+    }
+
+    .booking-area {
+      position: sticky;
+      z-index: 2;
+      bottom: 0;
+      margin: 6px -23px 0;
+      padding: 17px 23px calc(20px + env(safe-area-inset-bottom));
+      border-top: 1px solid rgba(234, 229, 225, .88);
+      background: rgba(250, 249, 247, .94);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+    }
+    .booking-button {
+      position: relative;
+      display: flex;
+      min-height: 56px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+      padding: 15px 18px;
+      overflow: hidden;
+      border: 1px solid var(--red);
+      border-radius: 3px;
+      background: var(--red);
+      box-shadow: 0 8px 20px rgba(200, 16, 46, .15);
+      color: #fff;
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color .22s ease, border-color .22s ease, box-shadow .22s ease, transform .22s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .booking-button svg { flex: 0 0 auto; }
+    .booking-button:hover { border-color: var(--red-dark); background: var(--red-dark); box-shadow: 0 10px 24px rgba(200, 16, 46, .21); transform: translateY(-1px); }
+    .booking-button:active { box-shadow: 0 3px 10px rgba(200, 16, 46, .17); transform: translateY(1px) scale(.99); }
+    .booking-button:focus-visible { outline: 3px solid rgba(200, 16, 46, .28); outline-offset: 3px; }
+    .microcopy {
+      max-width: 350px;
+      margin: 10px auto 0;
+      color: #77716d;
+      font-size: 10px;
+      line-height: 1.55;
+      text-align: center;
+      letter-spacing: 0;
+    }
+    .footer-note {
+      padding: 4px 0 3px;
+      color: #a49a95;
+      font-size: 9px;
+      letter-spacing: .04em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .reveal { opacity: 0; transform: translateY(12px); transition: opacity .65s ease, transform .65s cubic-bezier(.2,.65,.3,1); }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    .service-card:nth-child(2) { transition-delay: .06s; }
+    .service-card:nth-child(3) { transition-delay: .12s; }
+    .service-card:nth-child(4) { transition-delay: .18s; }
+
+    @media (min-width: 640px) {
+      .page-shell { padding-right: 28px; padding-left: 28px; }
+      .hero { padding-top: 55px; }
+      .booking-area { margin-right: -28px; margin-left: -28px; padding-right: 28px; padding-left: 28px; }
+      .service-card { padding: 19px 19px 17px; }
+      .service-name { font-size: 18px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="hero">
+      <div class="brand-mark reveal" aria-label="شعار مركز فينيرا">
+        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <path d="M20 31.5c-1.7-5-1.8-10.2 0-15.5 1.8 5.3 1.7 10.5 0 15.5Z" stroke="currentColor" stroke-width="1.1"/>
+          <path d="M19.8 25.5c-5.9-.2-9.3-3.2-10.1-8.8 5.8.3 9.2 3.2 10.1 8.8Z" stroke="currentColor" stroke-width="1.1"/>
+          <path d="M20.2 25.5c5.9-.2 9.3-3.2 10.1-8.8-5.8.3-9.2 3.2-10.1 8.8Z" stroke="currentColor" stroke-width="1.1"/>
+          <path d="M20 16c-.1-3.4 1.1-6.1 3.5-8 2.3 3.7 1.2 6.6-3.5 8Z" stroke="currentColor" stroke-width="1.1"/>
+          <path d="M20 32.5h8" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <p class="eyebrow reveal">لحظات من أجلك</p>
+      <h1 class="reveal">مركز فينيرا للتجميل والسبا</h1>
+      <p class="subtitle reveal">علاجات حصرية وعافية متكاملة</p>
+      <p class="location reveal">
+        <svg width="13" height="15" viewBox="0 0 16 18" fill="none" aria-hidden="true">
+          <path d="M13.25 7.3c0 4.1-5.25 9.1-5.25 9.1S2.75 11.4 2.75 7.3a5.25 5.25 0 1 1 10.5 0Z" stroke="currentColor" stroke-width="1.3"/>
+          <circle cx="8" cy="7.1" r="1.65" stroke="currentColor" stroke-width="1.2"/>
+        </svg>
+        <span>شارع شرم إليسيه، إيل ميركاتو، شرم الشيخ</span>
+      </p>
+      <div class="hero-rule reveal" aria-hidden="true">
+        <svg viewBox="0 0 16 16" fill="none"><path d="M8 1.6c.8 3.1 2.2 4.5 5.4 5.4-3.2.8-4.6 2.2-5.4 5.4C7.2 9.2 5.8 7.8 2.6 7 5.8 6.1 7.2 4.7 8 1.6Z" stroke="currentColor" stroke-width=".9"/></svg>
+      </div>
+    </header>
+
+      <section class="menu-section" aria-labelledby="menu-title">
+      <div class="section-heading reveal">
+        <h2 id="menu-title">قائمة العلاجات</h2>
+        <span>اختيارات بعناية</span>
+      </div>
+      <div class="service-list">
+        <article class="service-card reveal">
+          <div class="service-topline">
+            <h3 class="service-name">علاج زيميتس لمنطقة العين</h3>
+            <span class="leader" aria-hidden="true"></span>
+            <span class="price" dir="rtl">١٬٢٠٠ ج.م</span>
+          </div>
+          <p class="service-description">تجديد متقدم وشدّ للبشرة.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-topline">
+            <h3 class="service-name">تروبيك سكين كير لتنظيف الوجه بعمق</h3>
+            <span class="leader" aria-hidden="true"></span>
+            <span class="price" dir="rtl">١٬٨٠٠ ج.م</span>
+          </div>
+          <p class="service-description">عناية عضوية تمنح البشرة إشراقة ونقاءً.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-topline">
+            <h3 class="service-name">جلسة سبا متكاملة للجسم</h3>
+            <span class="leader" aria-hidden="true"></span>
+            <span class="price" dir="rtl">٢٬٠٠٠ ج.م</span>
+          </div>
+          <p class="service-description">١٠٠ دقيقة من الاسترخاء التام.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-topline">
+            <h3 class="service-name">صبغة وتصفيف شعر فاخر</h3>
+            <span class="leader" aria-hidden="true"></span>
+            <span class="price" dir="rtl">٢٬٥٠٠ ج.م</span>
+          </div>
+          <p class="service-description">اختيار لون باحترافية وعناية متكاملة.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer class="booking-area reveal">
+      <a class="booking-button" href="https://m.me/100483720151190" aria-label="اطلب حجزاً عبر فيسبوك ماسنجر">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3.2c-5.1 0-9.2 3.8-9.2 8.5 0 2.7 1.4 5.1 3.7 6.7v3l3.4-1.9c.7.2 1.4.3 2.1.3 5.1 0 9.2-3.8 9.2-8.5S17.1 3.2 12 3.2Z" fill="currentColor" fill-opacity=".17" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="m7.8 13.5 3.1-3.3 2.1 1.7 3.2-1.7-3.1 3.4-2.1-1.7-3.2 1.6Z" fill="currentColor"/>
+        </svg>
+        <span>اطلب حجزك عبر ماسنجر</span>
+      </a>
+      <p class="microcopy">احجز موعدك بسهولة، وسيؤكد فريق الاستقبال مدى التوفر.</p>
+    </footer>
+    <p class="footer-note">فينيرا · شرم الشيخ</p>
+  </main>
+
+  <script>
+    (() => {
+      const items = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        items.forEach(item => item.classList.add('is-visible'));
+        return;
+      }
+      const observer = new IntersectionObserver((entries, currentObserver) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            currentObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -20px 0px' });
+      items.forEach(item => observer.observe(item));
+    })();
+  </script>
+</body>
+</html>
