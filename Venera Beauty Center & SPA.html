@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1a0508">
+  <meta name="description" content="مركز فينيرا للتجميل والسبا في شرم الشيخ - تجارب عافية حصرية وعلاجات متقدمة.">
+  <title>مركز فينيرا للتجميل والسبا | شرم الشيخ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            venera: {
+              bg: '#160407',
+              surface: '#20080c',
+              card: '#290b11',
+              hover: '#340f16',
+              gold: '#d4af37',
+              'gold-light': '#f3e5ab',
+              'gold-dim': 'rgba(212, 175, 55, 0.15)',
+              border: 'rgba(212, 175, 55, 0.22)',
+              'border-light': 'rgba(255, 255, 255, 0.08)',
+              main: '#f7f4ee',
+              muted: '#c2b8b0',
+              quiet: '#8c7e75'
+            }
+          },
+          fontFamily: {
+            sansEn: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serifEn: ['Cinzel', 'Georgia', 'serif'],
+            sansAr: ['Cairo', 'Tahoma', 'sans-serif'],
+            serifAr: ['Amiri', 'Georgia', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; background: #160407; color: #f7f4ee; }
+    body {
+      margin: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background: radial-gradient(circle at 50% 0%, rgba(53, 13, 21, 0.95), #160407 65vh);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    body[dir="rtl"] { font-family: 'Cairo', Tahoma, sans-serif; }
+    body[dir="rtl"] h1, body[dir="rtl"] h2, body[dir="rtl"] h3, body[dir="rtl"] .font-serif-brand { font-family: 'Amiri', Georgia, serif; }
+    body[dir="ltr"] h1, body[dir="ltr"] h2, body[dir="ltr"] h3, body[dir="ltr"] .font-serif-brand { font-family: 'Cinzel', Georgia, serif; }
+  </style>
+</head>
+<body dir="rtl" class="bg-venera-bg text-venera-main selection:bg-venera-gold selection:text-venera-bg">
+
+  <header class="sticky top-0 z-50 bg-venera-bg/90 backdrop-blur-md border-b border-venera-border-light">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-full border border-venera-gold grid place-items-center text-venera-gold bg-venera-gold-dim transition-transform group-hover:scale-105">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif-brand text-base tracking-widest text-venera-main">VENERA</span>
+          <span class="text-[9px] tracking-[0.25em] text-venera-gold uppercase" data-copy="navLocation">Sharm El-Sheikh</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm text-venera-muted">
+        <a href="#about" class="hover:text-venera-gold transition-colors" data-copy="navAbout">Philosophy</a>
+        <a href="#experiences" class="hover:text-venera-gold transition-colors" data-copy="navExperiences">Treatments</a>
+        <a href="#ambience" class="hover:text-venera-gold transition-colors" data-copy="navAmbience">The Space</a>
+        <a href="#reviews" class="hover:text-venera-gold transition-colors" data-copy="navReviews">Reviews</a>
+        <a href="#location" class="hover:text-venera-gold transition-colors" data-copy="navLocationMenu">Location</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <div class="inline-flex bg-venera-surface border border-venera-border-light rounded-full p-1 shadow-inner" role="group" aria-label="Language Switcher">
+          <button class="lang-btn px-3 py-1.5 text-xs font-semibold rounded-full text-venera-muted transition-all" data-lang="ar" aria-pressed="true">العربية</button>
+          <button class="lang-btn px-3 py-1.5 text-xs font-semibold rounded-full text-venera-muted transition-all" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a href="#experiences" class="hidden sm:inline-flex px-5 py-2.5 rounded-full bg-venera-gold text-venera-bg text-xs font-bold tracking-wider uppercase hover:bg-venera-gold-light transition-all shadow-lg shadow-venera-gold/20" data-copy="navBook">
+          Book Session
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative pt-20 pb-28 px-6 overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none opacity-15 bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:36px_36px]"></div>
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-venera-surface border border-venera-border text-venera-gold text-xs tracking-[0.2em] uppercase mb-6 shadow-md">
+        <span class="w-2 h-2 rounded-full bg-venera-gold animate-pulse"></span>
+        <span data-copy="heroTag">Exclusive Wellness & Beauty Sanctuary</span>
+      </div>
+      <h1 class="text-4xl md:text-6xl font-normal leading-[1.25] mb-6 text-venera-main font-serif-brand" data-copy="heroTitle">
+        مركز فينيرا للتجميل والسبا
+      </h1>
+      <p class="text-base md:text-lg text-venera-muted max-w-2xl mx-auto leading-relaxed mb-10" data-copy="heroSubtitle">
+        حيث تقابل الفخامة هدوء البحر الأحمر. تجارب عناية استثنائية صُممت خصيصاً لتجديد حواسك وعافيتك المطلقة.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="#experiences" class="px-8 py-4 rounded-xl bg-venera-gold text-venera-bg font-bold text-sm tracking-wide hover:bg-venera-gold-light transition-all shadow-xl shadow-venera-gold/25" data-copy="heroCtaPrimary">
+          Explore Treatments & Book
+        </a>
+        <a href="#location" class="px-8 py-4 rounded-xl bg-venera-surface border border-venera-border-light text-venera-main font-semibold text-sm hover:border-venera-gold transition-all" data-copy="heroCtaSecondary">
+          Visit Our Salon
+        </a>
+      </div>
+      <div class="mt-10 inline-flex items-center gap-2 px-4 py-2 bg-venera-surface/90 border border-venera-border-light rounded-full text-xs text-venera-muted shadow-sm">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-venera-gold"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span data-copy="address">شارع شرم ليزيه، إل ميركاتو، شرم الشيخ</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-24 px-6 border-y border-venera-border-light bg-venera-surface/60">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-xs tracking-[0.25em] text-venera-gold uppercase block mb-3" data-copy="aboutEyebrow">Our Philosophy</span>
+        <h2 class="text-3xl font-serif-brand font-normal mb-6 text-venera-main" data-copy="aboutTitle">الجمال الحقيقي يبدأ بالسكينة المطلقة</h2>
+        <p class="text-venera-muted leading-relaxed mb-6" data-copy="aboutText1">
+          في مركز فينيرا، نؤمن بأن العناية بالمظهر لا تفصل عن السلام الداخلي. نجمع بين أحدث التقنيات العالمية في عالم العناية بالبشرة والسبا وبين أرقى مستويات الضيافة الشرقية.
+        </p>
+        <p class="text-venera-muted leading-relaxed" data-copy="aboutText2">
+          سواء كنت تبحثين عن علاج متقدم للبشرة بأجهزة زيميتس، أو جلسة استرخاء ملكية للجسم، فإن فريقنا من الخبراء المعتمدين يكرس جهوده ليقدم لك تجربة لا تُنسى.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-venera-card border border-venera-border p-6 rounded-2xl flex flex-col justify-between shadow-lg">
+          <span class="font-serif-brand text-3xl text-venera-gold mb-2">13+</span>
+          <span class="text-xs text-venera-muted tracking-wide uppercase" data-copy="stat1">Years of Excellence in Sharm</span>
+        </div>
+        <div class="bg-venera-card border border-venera-border p-6 rounded-2xl flex flex-col justify-between mt-6 shadow-lg">
+          <span class="font-serif-brand text-3xl text-venera-gold mb-2">100%</span>
+          <span class="text-xs text-venera-muted tracking-wide uppercase" data-copy="stat2">Organic Premium Oils & Products</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiences" class="py-28 px-6 max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-venera-border-light">
+      <div>
+        <span class="text-xs tracking-[0.25em] text-venera-gold uppercase block mb-2" data-copy="menuEyebrow">Curated Menu</span>
+        <h2 class="text-3xl md:text-4xl font-serif-brand font-normal text-venera-main" data-copy="menuTitle">التجارب والعلاجات المميزة</h2>
+      </div>
+      <p class="text-xs tracking-widest text-venera-gold mt-4 md:mt-0 uppercase" data-copy="menuCounter">Select a service to build your booking request</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Card 1 -->
+      <div class="experience-card bg-venera-card border border-venera-border-light rounded-2xl p-6 md:p-8 cursor-pointer transition-all hover:border-venera-border hover:bg-venera-hover group relative overflow-hidden shadow-lg" data-id="eye" aria-pressed="false">
+        <div class="flex justify-between items-start gap-4 mb-4">
+          <div>
+            <span class="text-[10px] tracking-[0.2em] text-venera-gold uppercase block mb-1" data-copy="c1Cat">Advanced Care</span>
+            <h3 class="text-xl font-semibold text-venera-main group-hover:text-venera-gold-light transition-colors" data-copy="c1Title">علاج زيميتس لمنطقة العين</h3>
+          </div>
+          <span class="font-serif-brand text-xl text-venera-gold-light font-bold" data-price="eye">١٬٢٠٠ ج.م</span>
+        </div>
+        <p class="text-sm text-venera-muted leading-relaxed mb-6" data-copy="c1Desc">تجديد عميق، تقليل الهالات، وشدّ فوري للبشرة المحيطة بالعين باستخدام أحدث تقنيات أجهزة زيميتس.</p>
+        <div class="flex items-center justify-between pt-4 border-t border-venera-border-light text-xs text-venera-quiet">
+          <span class="flex items-center gap-1.5 text-venera-muted">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-venera-gold"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span data-copy="c1Time">45 دقيقة</span>
+          </span>
+          <span class="select-toggle inline-flex items-center gap-2 text-venera-muted font-medium transition-colors">
+            <span data-copy="selectText">اختيار التجربة</span>
+            <span class="w-5 h-5 rounded-full border border-venera-quiet grid place-items-center transition-all">
+              <span class="w-2.5 h-2.5 rounded-full bg-venera-gold opacity-0 scale-50 transition-all"></span>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="experience-card bg-venera-card border border-venera-border-light rounded-2xl p-6 md:p-8 cursor-pointer transition-all hover:border-venera-border hover:bg-venera-hover group relative overflow-hidden shadow-lg" data-id="facial" aria-pressed="false">
+        <div class="flex justify-between items-start gap-4 mb-4">
+          <div>
+            <span class="text-[10px] tracking-[0.2em] text-venera-gold uppercase block mb-1" data-copy="c2Cat">Skincare Ritual</span>
+            <h3 class="text-xl font-semibold text-venera-main group-hover:text-venera-gold-light transition-colors" data-copy="c2Title">تروبيك سكين كير لتنظيف الوجه بعمق</h3>
+          </div>
+          <span class="font-serif-brand text-xl text-venera-gold-light font-bold" data-price="facial">١٬٨٠٠ ج.م</span>
+        </div>
+        <p class="text-sm text-venera-muted leading-relaxed mb-6" data-copy="c2Desc">جلسة علاجية بعناصر عضوية خالصة لتنقية المسام بعمق وإعادة الإشراقة الطبيعية للبشرة.</p>
+        <div class="flex items-center justify-between pt-4 border-t border-venera-border-light text-xs text-venera-quiet">
+          <span class="flex items-center gap-1.5 text-venera-muted">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-venera-gold"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span data-copy="c2Time">75 دقيقة</span>
+          </span>
+          <span class="select-toggle inline-flex items-center gap-2 text-venera-muted font-medium transition-colors">
+            <span data-copy="selectText">اختيار التجربة</span>
+            <span class="w-5 h-5 rounded-full border border-venera-quiet grid place-items-center transition-all">
+              <span class="w-2.5 h-2.5 rounded-full bg-venera-gold opacity-0 scale-50 transition-all"></span>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="experience-card bg-venera-card border border-venera-border-light rounded-2xl p-6 md:p-8 cursor-pointer transition-all hover:border-venera-border hover:bg-venera-hover group relative overflow-hidden shadow-lg" data-id="body" aria-pressed="false">
+        <div class="flex justify-between items-start gap-4 mb-4">
+          <div>
+            <span class="text-[10px] tracking-[0.2em] text-venera-gold uppercase block mb-1" data-copy="c3Cat">Royal Wellness</span>
+            <h3 class="text-xl font-semibold text-venera-main group-hover:text-venera-gold-light transition-colors" data-copy="c3Title">جلسة سبا متكاملة للجسم</h3>
+          </div>
+          <span class="font-serif-brand text-xl text-venera-gold-light font-bold" data-price="body">٢٬٠٠٠ ج.م</span>
+        </div>
+        <p class="text-sm text-venera-muted leading-relaxed mb-6" data-copy="c3Desc">تجربة استرخاء شاملة تخلص الجسم من التوتر وتنشيط الدورة الدموية بزيوت طبيعية فاخرة.</p>
+        <div class="flex items-center justify-between pt-4 border-t border-venera-border-light text-xs text-venera-quiet">
+          <span class="flex items-center gap-1.5 text-venera-muted">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-venera-gold"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span data-copy="c3Time">100 دقيقة</span>
+          </span>
+          <span class="select-toggle inline-flex items-center gap-2 text-venera-muted font-medium transition-colors">
+            <span data-copy="selectText">اختيار التجربة</span>
+            <span class="w-5 h-5 rounded-full border border-venera-quiet grid place-items-center transition-all">
+              <span class="w-2.5 h-2.5 rounded-full bg-venera-gold opacity-0 scale-50 transition-all"></span>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="experience-card bg-venera-card border border-venera-border-light rounded-2xl p-6 md:p-8 cursor-pointer transition-all hover:border-venera-border hover:bg-venera-hover group relative overflow-hidden shadow-lg" data-id="hair" aria-pressed="false">
+        <div class="flex justify-between items-start gap-4 mb-4">
+          <div>
+            <span class="text-[10px] tracking-[0.2em] text-venera-gold uppercase block mb-1" data-copy="c4Cat">Hair Studio</span>
+            <h3 class="text-xl font-semibold text-venera-main group-hover:text-venera-gold-light transition-colors" data-copy="c4Title">صبغة وتصفيف شعر فاخر</h3>
+          </div>
+          <span class="font-serif-brand text-xl text-venera-gold-light font-bold" data-price="hair">٢٬٥٠٠ ج.م</span>
+        </div>
+        <p class="text-sm text-venera-muted leading-relaxed mb-6" data-copy="c4Desc">خدمات احترافية لتجديد إطلالة شعرك بأحدث التقنيات مع عناية مركزة تحافظ على حيوية الشعر.</p>
+        <div class="flex items-center justify-between pt-4 border-t border-venera-border-light text-xs text-venera-quiet">
+          <span class="flex items-center gap-1.5 text-venera-muted">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-venera-gold"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span data-copy="c4Time">حسب الطلب</span>
+          </span>
+          <span class="select-toggle inline-flex items-center gap-2 text-venera-muted font-medium transition-colors">
+            <span data-copy="selectText">اختيار التجربة</span>
+            <span class="w-5 h-5 rounded-full border border-venera-quiet grid place-items-center transition-all">
+              <span class="w-2.5 h-2.5 rounded-full bg-venera-gold opacity-0 scale-50 transition-all"></span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ambience" class="py-24 px-6 max-w-6xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-xs tracking-[0.25em] text-venera-gold uppercase block mb-3" data-copy="galleryEyebrow">The Environment</span>
+      <h2 class="text-3xl md:text-4xl font-serif-brand font-normal text-venera-main mb-4" data-copy="galleryTitle">أجواء من الاسترخاء الفاخر</h2>
+      <p class="text-sm text-venera-muted" data-copy="gallerySubtitle">مساحات مصممة بعناية فائقة لتوفير الخصوصية والراحة التامة لضيوفنا في شرم الشيخ.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="h-80 rounded-2xl bg-venera-surface border border-venera-border-light overflow-hidden relative group shadow-lg">
+        <img src="https://placehold.co/600x800/20080c/d4af37?text=Venera+Spa+Interior" alt="Spa Interior" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/20080c/d4af37?text=Venera'">
+        <div class="absolute inset-0 bg-gradient-to-t from-venera-bg via-transparent to-transparent opacity-80"></div>
+        <span class="absolute bottom-6 left-6 right-6 text-sm font-medium tracking-wide text-venera-main" data-copy="g1Text">غرف المعالجة الهادئة</span>
+      </div>
+      <div class="h-80 rounded-2xl bg-venera-surface border border-venera-border-light overflow-hidden relative group shadow-lg">
+        <img src="https://placehold.co/600x800/20080c/d4af37?text=Skincare+Suite" alt="Skincare Suite" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/20080c/d4af37?text=Venera'">
+        <div class="absolute inset-0 bg-gradient-to-t from-venera-bg via-transparent to-transparent opacity-80"></div>
+        <span class="absolute bottom-6 left-6 right-6 text-sm font-medium tracking-wide text-venera-main" data-copy="g2Text">أحدث أجهزة العناية</span>
+      </div>
+      <div class="h-80 rounded-2xl bg-venera-surface border border-venera-border-light overflow-hidden relative group shadow-lg">
+        <img src="https://placehold.co/600x800/20080c/d4af37?text=Relaxation+Lounge" alt="Relaxation Lounge" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/20080c/d4af37?text=Venera'">
+        <div class="absolute inset-0 bg-gradient-to-t from-venera-bg via-transparent to-transparent opacity-80"></div>
+        <span class="absolute bottom-6 left-6 right-6 text-sm font-medium tracking-wide text-venera-main" data-copy="g3Text">صالة الاستقبال والراحة</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="py-20 px-6 max-w-4xl mx-auto">
+    <div class="bg-venera-surface border border-venera-border rounded-3xl p-8 md:p-12 text-center relative overflow-hidden shadow-xl">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-venera-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="flex items-center justify-center gap-2 mb-6">
+        <span class="text-venera-gold tracking-widest text-lg">★★★★★</span>
+        <span class="text-sm font-bold text-venera-main">88% Recommended</span>
+      </div>
+      <p class="text-lg md:text-xl font-serif-brand italic text-venera-muted max-w-2xl mx-auto leading-relaxed mb-8" data-copy="reviewQuote">
+        "الوجهة الأولى في شرم الشيخ لكل من يبحث عن الجودة والاحترافية والهدوء الراقي. خدمة عملاء ممتازة ونتائج مبهرة."
+      </p>
+      <div class="text-xs tracking-widest text-venera-gold uppercase font-semibold" data-copy="reviewAuthor">
+        Verified Client Review (35+ Reviews)
+      </div>
+    </div>
+  </section>
+
+  <section id="location" class="py-20 px-6 max-w-5xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-8 items-center bg-venera-card border border-venera-border rounded-3xl p-8 md:p-12 shadow-xl">
+      <div>
+        <span class="text-xs tracking-[0.25em] text-venera-gold uppercase block mb-3" data-copy="locEyebrow">Visit Us</span>
+        <h2 class="text-3xl font-serif-brand font-normal mb-6 text-venera-main" data-copy="locTitle">موقعنا في قلب شرم الشيخ</h2>
+        <p class="text-sm text-venera-muted leading-relaxed mb-6" data-copy="locDesc">
+          يسعدنا استقبالكم طوال أيام الأسبوع في وجهتنا الفاخرة بمنطقة إل ميركاتو.
+        </p>
+        <div class="space-y-4 text-sm text-venera-muted">
+          <div class="flex items-start gap-3">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-venera-gold shrink-0 mt-0.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-copy="locAddress">شارع شرم ليزيه، إل ميركاتو، هضبة أم السيد، شرم الشيخ، مصر</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-venera-gold shrink-0"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span data-copy="locHours">يومياً من 10:00 صباحاً حتى 10:00 مساءً</span>
+          </div>
+        </div>
+      </div>
+      <div class="h-72 rounded-2xl bg-venera-surface border border-venera-border-light overflow-hidden flex items-center justify-center relative shadow-inner">
+        <img src="https://placehold.co/600x400/20080c/d4af37?text=Sharm+El-Sheikh+Location" alt="Location Map" class="w-full h-full object-cover opacity-60" onerror="this.src='https://placehold.co/600x400/20080c/d4af37?text=Venera+Map'">
+        <div class="absolute inset-0 bg-venera-bg/50 flex items-center justify-center">
+          <a href="https://m.me/100483720151190" target="_blank" rel="noopener" class="px-6 py-3 rounded-xl bg-venera-gold text-venera-bg font-bold text-xs tracking-wider uppercase shadow-xl hover:bg-venera-gold-light transition-all" data-copy="locMapBtn">
+            Get Directions via Messenger
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-venera-bg/95 backdrop-blur-xl border-t border-venera-border p-5 md:p-6 shadow-2xl">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="text-center sm:text-start" id="selectionStatus">
+        <span class="text-xs text-venera-muted" data-copy="promptSelect">يرجى اختيار علاج واحد أو أكثر للمتابعة</span>
+      </div>
+      <a id="messengerCta" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-venera-gold text-venera-bg font-bold text-sm tracking-wide shadow-lg shadow-venera-gold/30 hover:bg-venera-gold-light transition-all transform hover:-translate-y-0.5" href="https://m.me/100483720151190" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.145 2 11.243c0 2.872 1.402 5.438 3.59 7.135V22l3.29-1.808c.95.264 1.962.408 3.12.408 5.523 0 10-4.145 10-9.243S17.523 2 12 2zm1.05 12.33l-2.58-2.75-5.03 2.75 5.53-5.88 2.58 2.75 5.03-2.75-5.53 5.88z"/></svg>
+        <span data-copy="ctaText">احجز الآن عبر فيسبوك مسنجر</span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const translations = {
+      ar: {
+        navLocation: "شرم الشيخ",
+        navAbout: "الفلسفة",
+        navExperiences: "العلاجات",
+        navAmbience: "الأجواء",
+        navReviews: "التقييمات",
+        navLocationMenu: "الموقع",
+        navBook: "حجز موعد",
+        heroTag: "عافية وتجميل حصري",
+        heroTitle: "مركز فينيرا للتجميل والسبا",
+        heroSubtitle: "حيث تقابل الفخامة هدوء البحر الأحمر. تجارب عناية صُممت خصيصاً لتجديد حواسك وعافيتك.",
+        heroCtaPrimary: "استكشف العلاجات واحجز",
+        heroCtaSecondary: "زوروا المركز",
+        address: "شارع شرم ليزيه، إل ميركاتو، شرم الشيخ",
+        aboutEyebrow: "فلسفتنا",
+        aboutTitle: "الجمال الحقيقي يبدأ بالسكينة المطلقة",
+        aboutText1: "في مركز فينيرا، نؤمن بأن العناية بالمظهر لا تفصل عن السلام الداخلي. نجمع بين أحدث التقنيات العالمية في عالم العناية بالبشرة والسبا وبين أرقى مستويات الضيافة الشرقية.",
+        aboutText2: "سواء كنت تبحثين عن علاج متقدم للبشرة بأجهزة زيميتس، أو جلسة استرخاء ملكية للجسم، فإن فريقنا من الخبراء المعتمدين يكرس جهوده ليقدم لك تجربة لا تُنسى.",
+        stat1: "سنوات من التميز في شرم الشيخ",
+        stat2: "زيوت وعناصر عضوية فاخرة 100%",
+        menuEyebrow: "القائمة المختارة",
+        menuTitle: "التجارب والعلاجات المميزة",
+        menuCounter: "اختر علاجاً لتأكيد طلب الحجز",
+        c1Cat: "عناية متقدمة",
+        c1Title: "علاج زيميتس لمنطقة العين",
+        c1Desc: "تجديد عميق، تقليل الهالات، وشدّ فوري للبشرة المحيطة بالعين باستخدام أحدث أجهزة زيميتس.",
+        c1Time: "٤٥ دقيقة",
+        c2Cat: "طقوس البشرة",
+        c2Title: "تروبيك سكين كير لتنظيف الوجه بعمق",
+        c2Desc: "جلسة علاجية بعناصر عضوية خالصة لتنقية المسام بعمق وإعادة الإشراقة الطبيعية للبشرة.",
+        c2Time: "٧٥ دقيقة",
+        c3Cat: "الاسترخاء الملكي",
+        c3Title: "جلسة سبا متكاملة للجسم",
+        c3Desc: "تجربة استرخاء شاملة تخلص الجسم من التوتر وتنشيط الدورة الدموية بزيوت طبيعية فاخرة.",
+        c3Time: "١٠٠ دقيقة",
+        c4Cat: "استوديو الشعر",
+        c4Title: "صبغة وتصفيف شعر فاخر",
+        c4Desc: "خدمات احترافية لتجديد إطلالة شعرك بأحدث التقنيات مع عناية مركزة تحافظ على حيوية الشعر.",
+        c4Time: "حسب الطلب",
+        selectText: "اختيار التجربة",
+        galleryEyebrow: "البيئة والهدوء",
+        galleryTitle: "أجواء من الاسترخاء الفاخر",
+        gallerySubtitle: "مساحات مصممة بعناية فائقة لتوفير الخصوصية والراحة التامة لضيوفنا في شرم الشيخ.",
+        g1Text: "غرف المعالجة الهادئة",
+        g2Text: "أحدث أجهزة العناية",
+        g3Text: "صالة الاستقبال والراحة",
+        reviewQuote: `"الوجهة الأولى في شرم الشيخ لكل من يبحث عن الجودة والاحترافية والهدوء الراقي."`,
+        reviewAuthor: "تقييمات العملاء الموثقة (35+ تقييم)",
+        locEyebrow: "زورونا",
+        locTitle: "موقعنا في قلب شرم الشيخ",
+        locDesc: "يسعدنا استقبالكم طوال أيام الأسبوع في وجهتنا الفاخرة بمنطقة إل ميركاتو.",
+        locAddress: "شارع شرم ليزيه، إل ميركاتو، هضبة أم السيد، شرم الشيخ، مصر",
+        locHours: "يومياً من 10:00 صباحاً حتى 10:00 مساءً",
+        locMapBtn: "احصل على الاتجاهات عبر مسنجر",
+        promptSelect: "يرجى اختيار علاج للمتابعة",
+        selectedPrompt: "تم اختيار: <strong>{title}</strong> — {price}",
+        ctaText: "احجز الآن عبر فيسبوك مسنجر",
+        prices: { eye: "١٬٢٠٠ ج.م", facial: "١٬٨٠٠ ج.م", body: "٢٬٠٠٠ ج.م", hair: "٢٬٥٠٠ ج.م" },
+        titles: { eye: "علاج زيميتس لمنطقة العين", facial: "تروبيك سكين كير لتنظيف الوجه بعمق", body: "جلسة سبا متكاملة للجسم", hair: "صبغة وتصفيف شعر فاخر" }
+      },
+      en: {
+        navLocation: "Sharm El-Sheikh",
+        navAbout: "Philosophy",
+        navExperiences: "Treatments",
+        navAmbience: "The Space",
+        navReviews: "Reviews",
+        navLocationMenu: "Location",
+        navBook: "Book Session",
+        heroTag: "Exclusive Wellness & Beauty Sanctuary",
+        heroTitle: "Venera Beauty Center & SPA",
+        heroSubtitle: "Where luxury meets Red Sea tranquility. Curated treatments designed to renew your senses.",
+        heroCtaPrimary: "Explore Treatments & Book",
+        heroCtaSecondary: "Visit Our Salon",
+        address: "Sharm Elysee St. il Mercato, Sharm el-Sheikh",
+        aboutEyebrow: "Our Philosophy",
+        aboutTitle: "True Beauty Begins in Absolute Serenity",
+        aboutText1: "At Venera, we believe aesthetic care is inseparable from inner peace. We combine cutting-edge skincare and wellness technology with refined hospitality.",
+        aboutText2: "Whether seeking advanced Zemits facial therapy or royal body wellness, our certified experts are dedicated to delivering an unforgettable experience.",
+        stat1: "Years of Excellence in Sharm",
+        stat2: "100% Organic Premium Oils & Products",
+        menuEyebrow: "Curated Menu",
+        menuTitle: "Signature Treatments & Experiences",
+        menuCounter: "Select a service to build your booking request",
+        c1Cat: "Advanced Care",
+        c1Title: "Zemits Eye Treatment",
+        c1Desc: "Advanced rejuvenation and targeted firming for the delicate eye area using state-of-the-art Zemits tech.",
+        c1Time: "45 mins",
+        c2Cat: "Skincare Ritual",
+        c2Title: "Tropic Skincare Deep Facial",
+        c2Desc: "Organic deep-cleansing facial designed to purify pores and restore your skin's natural luminous glow.",
+        c2Time: "75 mins",
+        c3Cat: "Royal Wellness",
+        c3Title: "Signature Full Body Spa",
+        c3Desc: "An immersive relaxation ritual releasing tension and stimulating circulation with premium organic oils.",
+        c3Time: "100 mins",
+        c4Cat: "Hair Studio",
+        c4Title: "Premium Hair Color & Styling",
+        c4Desc: "Expert color matching and intensive conditioning treatments to elevate and protect your hair's vitality.",
+        c4Time: "Custom",
+        selectText: "Select Experience",
+        galleryEyebrow: "The Environment",
+        galleryTitle: "Spaces Designed for Pure Relaxation",
+        gallerySubtitle: "Meticulously crafted sanctuaries offering ultimate privacy and comfort in Sharm El-Sheikh.",
+        g1Text: "Tranquil Treatment Suites",
+        g2Text: "Advanced Skincare Tech",
+        g3Text: "Serene Lounge Areas",
+        reviewQuote: `"The premier destination in Sharm El-Sheikh for those seeking unmatched quality, professionalism, and elegance."`,
+        reviewAuthor: "Verified Client Reviews (35+ Reviews)",
+        locEyebrow: "Visit Us",
+        locTitle: "In the Heart of Sharm El-Sheikh",
+        locDesc: "We welcome you every day at our luxury destination in il Mercato.",
+        locAddress: "Sharm Elysee St. il Mercato, Om El Sed Hill, Sharm el-Sheikh, Egypt",
+        locHours: "Daily from 10:00 AM to 10:00 PM",
+        locMapBtn: "Get Directions via Messenger",
+        promptSelect: "Please select an experience to continue",
+        selectedPrompt: "Selected: <strong>{title}</strong> — {price}",
+        ctaText: "Request Booking via Messenger",
+        prices: { eye: "1,200 EGP", facial: "1,800 EGP", body: "2,000 EGP", hair: "2,500 EGP" },
+        titles: { eye: "Zemits Eye Treatment", facial: "Tropic Skincare Deep Facial", body: "Signature Full Body Spa", hair: "Premium Hair Color & Styling" }
+      }
+    };
+
+    let currentLang = 'ar';
+    let selectedId = null;
+
+    const cards = document.querySelectorAll('.experience-card');
+    const langBtns = document.querySelectorAll('.lang-btn');
+    const statusBox = document.getElementById('selectionStatus');
+
+    function updateView() {
+      const t = translations[currentLang];
+      const isAr = currentLang === 'ar';
+
+      document.documentElement.lang = currentLang;
+      document.body.dir = isAr ? 'rtl' : 'ltr';
+
+      document.querySelectorAll('[data-copy]').forEach(el => {
+        const key = el.getAttribute('data-copy');
+        if (t[key]) el.innerHTML = t[key];
+      });
+
+      document.querySelectorAll('[data-price]').forEach(el => {
+        const id = el.getAttribute('data-price');
+        el.textContent = t.prices[id];
+      });
+
+      langBtns.forEach(btn => {
+        const active = btn.getAttribute('data-lang') === currentLang;
+        btn.setAttribute('aria-pressed', active);
+        if (active) {
+          btn.classList.add('bg-venera-gold', 'text-venera-bg', 'shadow');
+          btn.classList.remove('text-venera-muted');
+        } else {
+          btn.classList.remove('bg-venera-gold', 'text-venera-bg', 'shadow');
+          btn.classList.add('text-venera-muted');
+        }
+      });
+
+      updateStatusText();
+    }
+
+    function updateStatusText() {
+      const t = translations[currentLang];
+      if (!selectedId) {
+        statusBox.innerHTML = `<span class="text-xs text-venera-muted">${t.promptSelect}</span>`;
+      } else {
+        const title = t.titles[selectedId];
+        const price = t.prices[selectedId];
+        statusBox.innerHTML = `<span class="text-xs text-venera-main">${t.selectedPrompt.replace('{title}', title).replace('{price}', price)}</span>`;
+      }
+    }
+
+    langBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        currentLang = btn.getAttribute('data-lang');
+        updateView();
+      });
+    });
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const id = card.getAttribute('data-id');
+        const radioIndicator = card.querySelector('.select-toggle span:last-child span');
+        const toggleBox = card.querySelector('.select-toggle');
+
+        if (selectedId === id) {
+          selectedId = null;
+          card.setAttribute('aria-pressed', 'false');
+          card.classList.remove('border-venera-gold', 'bg-[#391018]');
+          radioIndicator.classList.remove('opacity-100', 'scale-100');
+          radioIndicator.classList.add('opacity-0', 'scale-50');
+          toggleBox.classList.remove('text-venera-gold-light');
+        } else {
+          selectedId = id;
+          cards.forEach(c => {
+            c.setAttribute('aria-pressed', 'false');
+            c.classList.remove('border-venera-gold', 'bg-[#391018]');
+            c.querySelector('.select-toggle span:last-child span').classList.remove('opacity-100', 'scale-100');
+            c.querySelector('.select-toggle span:last-child span').classList.add('opacity-0', 'scale-50');
+            c.querySelector('.select-toggle').classList.remove('text-venera-gold-light');
+          });
+          card.setAttribute('aria-pressed', 'true');
+          card.classList.add('border-venera-gold', 'bg-[#391018]');
+          radioIndicator.classList.remove('opacity-0', 'scale-50');
+          radioIndicator.classList.add('opacity-100', 'scale-100');
+          toggleBox.classList.add('text-venera-gold-light');
+        }
+        updateStatusText();
+      });
+    });
+
+    updateView();
+  </script>
+</body>
+</html>
